@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.user_photo_display_view">
+   <children>
+      <Label fx:id="greet" layoutX="6.0" prefHeight="17.0" prefWidth="114.0" text="Hello" />
+      <ImageView fx:id="imageView" fitHeight="306.0" fitWidth="434.0" layoutX="66.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="leftArrow" layoutX="433.0" layoutY="360.0" mnemonicParsing="false" onAction="#goLeft" text="&lt;-" />
+      <Button fx:id="rightArrow" layoutX="466.0" layoutY="360.0" mnemonicParsing="false" onAction="#goRight" prefHeight="27.0" prefWidth="33.0" text="-&gt;" />
+      <Label layoutX="113.0" layoutY="410.0" prefHeight="17.0" prefWidth="57.0" text="Caption: " />
+      <Label fx:id="captionLabel" alignment="TOP_LEFT" layoutX="169.0" layoutY="410.0" prefHeight="54.0" prefWidth="246.0" wrapText="true" />
+      <Label layoutX="114.0" layoutY="373.0" text="Date:" />
+      <Label fx:id="dateLabel" layoutX="169.0" layoutY="373.0" prefHeight="17.0" prefWidth="167.0" />
+      <Label layoutX="113.0" layoutY="474.0" text="Tags:" />
+      <TableView fx:id="tableView" layoutX="153.0" layoutY="474.0" prefHeight="101.0" prefWidth="152.0">
+        <columns>
+          <TableColumn fx:id="tagTypeColumn" prefWidth="75.0" text="Tag Type" />
+          <TableColumn fx:id="tagValueColumn" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <Label fx:id="title" layoutX="248.0" layoutY="589.0" text="Add A Tag" />
+      <TextField fx:id="tagTypeCaption" layoutX="284.0" layoutY="606.0" prefHeight="27.0" prefWidth="114.0" />
+      <TextField fx:id="tagValue" layoutX="284.0" layoutY="639.0" prefHeight="27.0" prefWidth="114.0" />
+      <Label fx:id="tagTypeCaptionLabel" layoutX="187.0" layoutY="611.0" prefHeight="17.0" prefWidth="85.0" text="Type Of Tag:" />
+      <Label fx:id="tagValueLabel" layoutX="187.0" layoutY="644.0" text="Tag Value: " />
+      <Button fx:id="ok" layoutX="305.0" layoutY="675.0" mnemonicParsing="false" onAction="#ok" text="Ok" />
+      <Button fx:id="cancel" layoutX="338.0" layoutY="675.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button fx:id="edit" layoutX="437.0" layoutY="414.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="addTag" layoutX="323.0" layoutY="478.0" mnemonicParsing="false" onAction="#addTag" prefHeight="17.0" prefWidth="70.0" text="Add Tag" />
+      <Button fx:id="delete" layoutX="323.0" layoutY="505.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="27.0" prefWidth="70.0" text="Delete" />
+      <Button fx:id="logout" layoutX="500.0" layoutY="-5.0" mnemonicParsing="false" text="Logout" onAction="#logout" />
+      <Button fx:id="back" layoutY="17.0" mnemonicParsing="false" text="&lt;- Back" onAction="#back" />
+   </children>
+</AnchorPane>

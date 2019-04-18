@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.user_albums_view">
+   <children>
+      <Label fx:id="greet" layoutX="6.0" prefHeight="17.0" prefWidth="212.0" text="Hello" />
+      <Label layoutX="254.0" layoutY="53.0" text="Albums" />
+      <TableView fx:id="tableView" layoutX="11.0" layoutY="82.0" prefHeight="261.0" prefWidth="531.0">
+        <columns>
+          <TableColumn fx:id="addColumn" prefWidth="125.07517623901367" text="Name" />
+          <TableColumn fx:id="dateFirstColumn" prefWidth="157.92478942871094" text="Date Of First Photo" />
+          <TableColumn fx:id="dateLastColumn" prefWidth="147.1419677734375" text="Date Of Last Photo" />
+          <TableColumn fx:id="photoAmountColumn" prefWidth="93.417724609375" text="Photo Amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="edit" layoutX="57.0" layoutY="343.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="delete" layoutX="99.0" layoutY="343.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button fx:id="viewPhotos" layoutX="158.0" layoutY="343.0" mnemonicParsing="false" onAction="#viewPhotos" text="View Photos" />
+      <Label fx:id="addEditTitle" layoutX="224.0" layoutY="395.0" text="Edit Album Name" />
+      <Label layoutX="171.0" layoutY="422.0" text="Album Name:" />
+      <TextField fx:id="albumName" layoutX="266.0" layoutY="417.0" prefHeight="27.0" prefWidth="114.0" />
+      <Button fx:id="ok" layoutX="282.0" layoutY="458.0" mnemonicParsing="false" onAction="#ok" text="Ok" />
+      <Button fx:id="cancel" layoutX="317.0" layoutY="458.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Button fx:id="search" layoutX="481.0" layoutY="34.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button fx:id="logout" layoutX="494.0" layoutY="-5.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+   </children>
+</AnchorPane>

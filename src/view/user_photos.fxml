@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.user_photos_view">
+   <children>
+      <Label fx:id="greet" layoutX="8.0" layoutY="-2.0" prefHeight="17.0" prefWidth="148.0" text="Hello" />
+      <Label layoutX="230.0" layoutY="42.0" text="Photos" />
+      <Button fx:id="add" layoutX="38.0" layoutY="271.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="edit" layoutX="82.0" layoutY="271.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="delete" layoutX="125.0" layoutY="271.0" mnemonicParsing="false" onAction="#delete" prefHeight="27.0" prefWidth="60.0" text="Delete" />
+      <Button fx:id="fullView" layoutX="38.0" layoutY="298.0" mnemonicParsing="false" onAction="#fullView" prefHeight="27.0" prefWidth="77.0" text="Full View" />
+      <Button fx:id="tag" layoutX="115.0" layoutY="298.0" mnemonicParsing="false" onAction="#tag" text="Tag" />
+      <Label fx:id="title" layoutX="213.0" layoutY="331.0" text="Add A Photo" />
+      <Label fx:id="linkAndTagTypeLabel" layoutX="144.0" layoutY="364.0" text="Photo Link: " />
+      <TextField fx:id="linkAndTagType" layoutX="239.0" layoutY="359.0" prefHeight="27.0" prefWidth="133.0" />
+      <Label fx:id="tagValueLabel" layoutX="144.0" layoutY="396.0" prefHeight="17.0" prefWidth="73.0" text="Tag Value:" />
+      <TextField fx:id="tagValue" layoutX="239.0" layoutY="391.0" prefHeight="27.0" prefWidth="133.0" />
+      <Button fx:id="ok" layoutX="270.0" layoutY="432.0" mnemonicParsing="false" onAction="#ok" text="Ok" />
+      <Button fx:id="cancel" layoutX="306.0" layoutY="432.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="66.0" text="Cancel" />
+      <TableView fx:id="tableView" layoutX="38.0" layoutY="71.0" prefHeight="200.0" prefWidth="426.0">
+        <columns>
+          <TableColumn fx:id="photoColumn" prefWidth="75.0" text="Image" />
+          <TableColumn fx:id="captionColumn" prefWidth="350.0" text="Caption" />
+        </columns>
+      </TableView>
+      <Button fx:id="copy" layoutX="322.0" layoutY="271.0" mnemonicParsing="false" onAction="#copyTo" text="Copy To" />
+      <Button fx:id="move" layoutX="392.0" layoutY="271.0" mnemonicParsing="false" onAction="#moveTo" text="Move To" />
+      <Button fx:id="logout" layoutX="443.0" layoutY="-7.0" mnemonicParsing="false" text="Logout" onAction="#logout" />
+      <Button fx:id="back" layoutX="38.0" layoutY="37.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" text="&lt;- Back" onAction="#back" />
+   </children>
+</AnchorPane>
