@@ -12,7 +12,6 @@ import javafx.scene.layout.BorderPane;
 /**
  * Class for managing Chess game
  * @author Ronald Kilbride
- * @author Radha Katkamwar
  *
  */
 
